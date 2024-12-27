@@ -1,8 +1,30 @@
 #import "@preview/fontawesome:0.5.0": *
 
+#let date = none // or string for preset date
 #set page(
   paper: "us-letter",
   margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  footer: context {
+    let updatestr = none
+    if counter(page).get().at(0) == counter(page).final().at(0) {
+      let datestr = date
+      if datestr == none {
+        datestr = datetime.today().display("[day] [month repr:long] [year]")
+      }
+      updatestr = "Last updated: " + datestr
+    }
+    set text(size: 9pt)
+    grid(
+      inset: (x: 0pt, y: 0pt),
+      columns: (1fr, 1fr),
+      grid.cell(align: left)[
+        #updatestr
+      ],
+      grid.cell(align: right)[
+        #counter(page).display("1/1", both: true)
+      ],
+    )
+  },
 )
 
 #grid(
@@ -10,7 +32,7 @@
   columns: (1fr, 1fr),
   align(left)[
     #text(weight: "bold", size: 18pt)[
-      #link("https://scholar.google.com/citations?user=OLe-JBAAAAAJ&hl=en")[Pranshu Malik]
+      #link("https://pranshumalik14.github.io/")[Pranshu Malik]
     ]\
     _Naturalistic Control — in Humans, also for Robots_
   ],
@@ -76,6 +98,7 @@
     (
       "Rotation project in the embodied cognitive science unit on investigating the role of noise in the emergence of structure and complex patterns in a wet artificial life setup",
       "Planned rotations with cognitive neurorobotics and neural computation research units",
+      "Selected coursework: Neural Dynamics, Brain Computation, Neurorobotics, Intro. Embodied Cognitive Science",
     ),
   )
   #activity(
@@ -199,8 +222,7 @@
 ]
 
 #section("Miscellaneous")[
-  // todo: edit big ideas committee
-  #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) and historically organized various panel events focussing on broad research trends and journal papers in neuroscience. In my year, we switched our focus by also including graduate students in philosophy and hosted didactic discussions as well as regular share-what-you-read sessions on topics like philosophy of science and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness, attended by 40+ graduate students and postdocs.")
-  #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking and citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation")
+  #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University, which historically organized panel events focusing on broad research trends or functioned as a neuroscience journal club. In my year, we pivoted the club's focus by also including graduate students in philosophy and hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness attended by 40+ graduate students and postdocs.")
+  #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking; citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
   #project_descr("Sports and Outdoor Activities: Love playing cricket and badminton, and have also played in local cricket leagues. I also enjoy running, hiking, camping, and long walks in nature.")
 ]
