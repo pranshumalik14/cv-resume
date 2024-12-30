@@ -32,7 +32,7 @@
   columns: (1fr, 1fr),
   align(left)[
     #text(weight: "bold", size: 18pt)[
-      #link("https://scholar.google.com/citations?user=OLe-JBAAAAAJ&hl=en")[Pranshu Malik]
+      #link("https://pranshumalik14.github.io/")[Pranshu Malik]
     ]\
     _Naturalistic Control — in Humans, also for Robots_
   ],
