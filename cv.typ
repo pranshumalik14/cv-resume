@@ -96,9 +96,9 @@
     "Ph.D. in Neuroscience and Robotics",
     "Jan. '25 — Present",
     (
-      "Rotation project in the embodied cognitive science unit on investigating the role of noise in the emergence of structure and complex patterns in a wet artificial life setup",
+      "Rotation project in the embodied cognitive science unit on finding and modelling necessary principles for the emergence of an interactional sense of self and non-self in artificial embodied agents",
       "Planned rotations with cognitive neurorobotics and neural computation research units",
-      "Selected coursework: Neural Dynamics, Brain Computation, Neurorobotics, Intro. Embodied Cognitive Science",
+      "Selected coursework: Cognitive Neural Dynamics, Brain Computation, Neurorobotics, Embodied Cognitive Science",
     ),
   )
   #activity(
