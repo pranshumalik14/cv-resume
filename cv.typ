@@ -39,7 +39,7 @@
   align(right)[
     #link("https://github.com/pranshumalik14")[#fa-github() pranshumalik14]
     #link("https://www.linkedin.com/in/pranshu-malik/")[#fa-linkedin() pranshu-malik] \
-    #text(font: "IBM Plex Mono")[#link("mailto:pranshu.malik@malikpra.in")]
+    #text(font: "IBM Plex Mono", size: 9.25pt)[#link("mailto:pranshu.malik@malikpra.in")]
   ],
 )
 
@@ -74,16 +74,16 @@
       colspan: 2,
       breakable: true,
       inset: (x: 1em, y: 0em),
-      par(leading: 0.4em, justify: true)[
-        #text(size: 9.5pt)[
-          #v(0.25em)
-          #list(
-            marker: [—],
-            tight: true,
-            spacing: 0.4em,
-            ..descr,
-          )
-        ]
+      block[
+        #v(0.25em)
+        #set text(size: 9.5pt)
+        #set par(leading: 0.4em, justify: true)
+        #list(
+          marker: [—],
+          tight: true,
+          spacing: 0.4em,
+          ..descr,
+        )
       ],
     )
   )
@@ -96,9 +96,9 @@
     "Ph.D. in Neuroscience and Robotics",
     "Jan. '25 — Present",
     (
-      "Rotation project in the embodied cognitive science unit on finding and modelling necessary principles for the emergence of an interactional sense of self and non-self in artificial embodied agents",
-      "Planned rotations with cognitive neurorobotics and neural computation research units",
-      "Selected coursework: Cognitive Neural Dynamics, Brain Computation, Neurorobotics, Embodied Cognitive Science",
+      "Rotation projects on unified theory of prediction and action in neural processing, and on interactional sense of self and other",
+      "Planned rotation with cognitive neurorobotics research unit",
+      "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
   #activity(
@@ -187,10 +187,9 @@
 ]
 
 #section("Invited Talks & Posters")[
-  #set enum(spacing: 1.15em, tight: true)
-  // todo: awaiting typst reverse ordered list
-  2. Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, 2024.
-  1. Computing Error-bounded Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
+  #set enum(spacing: 1.15em, tight: true, reversed: true)
+  + Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, 2024.
+  + Computing Error-bounded Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
           size: 6.5pt,
           baseline: -0.75pt,
         )[#link("https://docs.google.com/presentation/d/1JCgzjaANxZCT1YolAK2pu6-y0TTslsGPYoZYA25BrpY/edit?usp=sharing")[#fa-external-link() \[slides\]]]
@@ -222,7 +221,8 @@
 ]
 
 #section("Miscellaneous")[
-  #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University, which historically organized panel events focusing on broad research trends or functioned as a neuroscience journal club. In my year, we pivoted the club's focus by also including graduate students in philosophy and hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness attended by 40+ graduate students and postdocs.")
-  #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking; citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
+  #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities included identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
+  #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University. We hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness, which was attended by 40+ graduate students and postdocs.")
+  #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking; education; citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
   #project_descr("Sports and Outdoor Activities: Love playing cricket and badminton, and have also played in local cricket leagues. I also enjoy running, hiking, camping, and long walks in nature.")
 ]
