@@ -96,8 +96,8 @@
     "Ph.D. in Neuroscience and Robotics",
     "Jan. '25 — Present",
     (
-      "Rotation projects on unified theory of prediction and action in neural processing, and on interactional sense of self and other",
-      "Planned rotation with cognitive neurorobotics research unit",
+      "Rotation projects on prediction and action in neural processing, and on interactional sense of self and other",
+      "Planned rotation with cognitive neurorobotics and information theory units on principled modelling of human motor control",
       "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
@@ -206,13 +206,6 @@
   ]
 }
 
-// #section("Projects")[
-//   #project_descr("Project Name: Long-form description.")
-//   #project_descr("MotorNet-Pro: A short course project in reinforcement learning which proposes a hierarchical stochastic model-based algorithm for control of a realistic arm, subject to biomechanical complexity and uncertainty in dynamics. Its formulation aims to externalize the iterative and predictive control hierarchies that are central to sensorimotor pathways in primates, in order to form a more interpretable control policy. The Soft Actor-Critic method was used to train a baseline controller for reaching.")
-//   #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project with the goal of developing a reach control method by combining algorithmic models of human motor-learning processes, such as proximodistal exploration and motor babbling. Designed and evaluated an interpolation-based method that covered the entire reachable space, contrary to tuning for specific reach targets.")
-//   #project_descr("Analog IK Solver: Presents a generic computation method for inverse kinematics of serial robots using a modular and digitally reconfigurable analog circuit. Error-bounded approximate solutions are found in fixed time by continuously evaluating forward kinematics using periodic, phase-locked, and frequency-scaled waveforms of successive joint configurations.")
-// ]
-
 #section("Technical Skills")[
   #align(center)[
     Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ OpenCV
@@ -220,8 +213,15 @@
   ]
 ]
 
+#section("Selected Projects")[
+//   #project_descr("Project Name: Long-form description.")
+  #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project with the goal of developing a reach control method by combining algorithmic models of human motor-learning processes, such as proximodistal exploration and motor babbling. Designed and evaluated an interpolation-based method that covered the entire reachable space, contrary to tuning for specific reach targets.")
+  #project_descr("Analog IK Solver: Presents a generic computation method for inverse kinematics of serial robots using a modular and digitally reconfigurable analog circuit. Error-bounded approximate solutions are found in fixed time by continuously evaluating forward kinematics using periodic, phase-locked, and frequency-scaled waveforms as successive joint configurations.")
+  #project_descr("CollabBots: A robotic platform, built from scratch, with two opposing robotic arms and orthogonal cameras to implement and test visual servoing and collaborative scheduling for picking and placing toy blocks in pre-specified goal patterns.")
+]
+
 #section("Miscellaneous")[
-  #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities included identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
+  #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities include identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
   #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University. We hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness, which was attended by 40+ graduate students and postdocs.")
   #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking; education; citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
   #project_descr("Sports and Outdoor Activities: Love playing cricket and badminton, and have also played in local cricket leagues. I also enjoy running, hiking, camping, and long walks in nature.")
