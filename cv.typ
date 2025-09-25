@@ -96,8 +96,8 @@
     "Ph.D. in Neuroscience and Robotics",
     "Jan. '25 — Present",
     (
-      "Rotation projects on prediction and action in neural processing, and on interactional sense of self and other",
-      "Planned rotation with cognitive neurorobotics and information theory units on principled modelling of human motor control",
+      "Mini projects on adaptive action composition, passive-active control, systems reconstruction, and stability of spiking nets",
+      "Final rotation project on biological motor control in the Biological Physics Theory unit",
       "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
@@ -111,7 +111,7 @@
         + text(
           size: 6.5pt,
           baseline: -0.75pt,
-        )[#link("https://ir.lib.uwo.ca/etd/10482/")[#fa-external-link() \[link\]]],
+        )[#link("https://hdl.handle.net/20.500.14721/27839")[#fa-external-link() \[link\]]],
       "Advisors: Andrew Pruszynski, Paul Gribble",
       "Recipient of the Vector Scholarship in Artificial Intelligence ($17.5k) and the BrainsCAN Graduate Studentship ($50k)",
       "Selected coursework: Principles of Neuroscience, Reinforcement Learning",
