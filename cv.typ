@@ -97,14 +97,14 @@
     "Jan. '25 — Present",
     (
       "Mini projects on adaptive action composition, passive-active control, systems reconstruction, and stability of spiking nets",
-      "Final rotation project on biological motor control in the Biological Physics Theory unit",
+      "Final rotation project on speed-curvature power law in the Biological Physics Theory unit",
       "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
   #activity(
     "University of Western Ontario",
     "London, Canada",
-    "M.Sc. in Neuroscience; cGPA: 4.0/4.0",
+    "M.Sc. in Neuroscience; Grade: A",
     "Sept. '22 — Oct. '24",
     (
       "Thesis title: The Nature of Reflexes in Online Planning and Control "
@@ -186,8 +186,13 @@
   )
 ]
 
-#section("Invited Talks & Posters")[
+#section("Talks & Posters")[
   #set enum(spacing: 1.15em, tight: true, reversed: true)
+  + Integration Timescales of Visuospatial Task Constraints and Composition Strategies in Sensory Feedback Responses. Poster, Champalimaud Research Symposium: _Neurocybernetics at Scale_, Champalimaud Centre for the Unknown, 2025. #text(
+          size: 6.5pt,
+          baseline: -0.75pt,
+        )[#link("https://drive.google.com/file/d/1WWBgnf7vEsh5YPw07KKoWVKA_ftK2FY7/view?usp=sharing")[#fa-external-link() \[pdf\]]]
+    Awarded a travel grant (€1500) by the Champalimaud Foundation and Protocol Labs.
   + Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, 2024.
   + Computing Error-bounded Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
           size: 6.5pt,
@@ -208,8 +213,7 @@
 
 #section("Technical Skills")[
   #align(center)[
-    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ OpenCV
-    $dot$ ROS $dot$ Graphics Design $dot$ 3D Design $dot$ Machining
+    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ Graphics Design $dot$ 3D Design $dot$ Mechatronics $dot$ Machining
   ]
 ]
 
@@ -223,6 +227,6 @@
 #section("Miscellaneous")[
   #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities include identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
   #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University. We hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness, which was attended by 40+ graduate students and postdocs.")
-  #project_descr("Hobbies and Side Interests: Photography and painting; systems thinking; education; citizen science; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
+  #project_descr("Hobbies and Side Interests: Photography and painting; citizen science; education systems; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
   #project_descr("Sports and Outdoor Activities: Love playing cricket and badminton, and have also played in local cricket leagues. I also enjoy running, hiking, camping, and long walks in nature.")
 ]
