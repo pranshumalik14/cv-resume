@@ -97,14 +97,14 @@
     "Jan. '25 — Present",
     (
       "Mini projects on adaptive action composition, passive-active control, systems reconstruction, and stability of spiking nets",
-      "Final rotation project on biological motor control in the Biological Physics Theory unit",
+      "Final rotation project on speed-curvature power law in the Biological Physics Theory unit",
       "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
   #activity(
     "University of Western Ontario",
     "London, Canada",
-    "M.Sc. in Neuroscience; cGPA: 4.0/4.0",
+    "M.Sc. in Neuroscience; Grade: A",
     "Sept. '22 — Oct. '24",
     (
       "Thesis title: The Nature of Reflexes in Online Planning and Control "
@@ -188,6 +188,10 @@
 
 #section("Invited Talks & Posters")[
   #set enum(spacing: 1.15em, tight: true, reversed: true)
+  + Integration Timescales of Visuospatial Task Constraints and Composition Strategies in Sensory Feedback Responses. Poster, Champalimaud Research Symposium, Champalimaud Centre for the Unknown, 2025. #text(
+          size: 6.5pt,
+          baseline: -0.75pt,
+        )[#link("https://drive.google.com/file/d/1WWBgnf7vEsh5YPw07KKoWVKA_ftK2FY7/view?usp=sharing")[#fa-external-link() \[pdf\]]] Awarded travel grant (€1500)
   + Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, 2024.
   + Computing Error-bounded Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
           size: 6.5pt,
@@ -208,8 +212,7 @@
 
 #section("Technical Skills")[
   #align(center)[
-    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ OpenCV
-    $dot$ ROS $dot$ Graphics Design $dot$ 3D Design $dot$ Machining
+    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ Graphics Design $dot$ 3D Design $dot$ Mechatronics $dot$ Machining
   ]
 ]
 
