@@ -39,12 +39,12 @@
   align(right)[
     #link("https://github.com/pranshumalik14")[#fa-github() pranshumalik14]
     #link("https://www.linkedin.com/in/pranshu-malik/")[#fa-linkedin() pranshu-malik] \
-    #text(font: "IBM Plex Mono", size: 9.25pt)[#link("mailto:pranshu.malik@malikpra.in")]
+    #text(font: "IBM Plex Mono", size: 9.25pt)[#link("mailto:pranshu.malik@oist.jp")]
   ],
 )
 
 #let section(head, body) = {
-  block(breakable: false)[
+  block(breakable: true)[
     // section heading stays with the content
     #rect(width: 100%, fill: silver)[*#head*]
     #v(-1em)
@@ -88,16 +88,14 @@
     )
   )
 }
-
 #section("Education")[
   #activity(
     "Okinawa Institute of Science and Technology",
     "Okinawa, Japan",
-    "Ph.D. in Neuroscience and Robotics",
+    "Ph.D. in Computational Neuroscience",
     "Jan. '25 — Present",
     (
-      "Mini projects on adaptive action composition, passive-active control, systems reconstruction, and stability of spiking nets",
-      "Final rotation project on speed-curvature power law in the Biological Physics Theory unit",
+      "Advisors: Greg Stephens, Amedeo Roberto Esposito",
       "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
     ),
   )
@@ -113,7 +111,7 @@
           baseline: -0.75pt,
         )[#link("https://hdl.handle.net/20.500.14721/27839")[#fa-external-link() \[link\]]],
       "Advisors: Andrew Pruszynski, Paul Gribble",
-      "Recipient of the Vector Scholarship in Artificial Intelligence ($17.5k) and the BrainsCAN Graduate Studentship ($50k)",
+      "Recipient of the Vector Scholarship in Artificial Intelligence (C$17.5k) and the BrainsCAN Graduate Studentship (C$50k)",
       "Selected coursework: Principles of Neuroscience, Reinforcement Learning",
     ),
   )
@@ -123,7 +121,7 @@
     "B.A.Sc. in Electrical Engineering; cGPA: 3.92/4.0",
     "Sept. '17 — Apr. '22",
     (
-      "Engineering International Scholar: received a full tuition fee waiver for the entire duration of the program ($229k)",
+      "Engineering International Scholar: received a full tuition fee waiver for the entire duration of the program (C$229k)",
       "Recipient of the Adel S. Sedra Gold Medal for achieving the highest cumulative average in the graduating class",
       "Graduated with High Honors and Minor in Robotics and Mechatronics; Dean's Honor List in all semesters",
       "Selected coursework (*graduate-level): Linear Control Systems, Signals and Systems, Fields and Waves, Digital Systems, Digital Signal Processing, Probability, *Random Processes, *Sensory Communication, System Mapping, Machine Learning, Real-time Control Systems, Robot Modeling and Control, Mechatronics, Philosophy of Religion",
@@ -133,12 +131,22 @@
 
 #section("Selected Research & Professional Experiences")[
   #activity(
+    "Graduate Student, OIST Graduate University",
+    "Okinawa, Japan",
+    "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
+    "Jan. '25 — Present",
+    (
+      "Focusing on understanding closed-loop neural dynamics through behaviorally informative decomposition of control",
+      "Completed several mini projects on topics like adaptive action chunking in recurrent neural networks, passive-active optimal control, dynamical systems reconstruction, speed-curvature power-law, and I/O stability of plastic spiking neural networks",
+    ),
+  )
+  #activity(
     "Graduate Student, Western Institute for Neuroscience",
     "London, Canada",
     "Sensorimotor Superlab",
     "Sept. '22 — Oct. '24",
     (
-      "Investigated the coupling between feedback and voluntary motor control by carefully estimating update times for both modalities; also tried investigating the reliance of implicit adaptation on motor variability",
+      "Investigated the coupling between feedback and voluntary motor control by carefully estimating the update times of both modalities; also tried investigating the reliance of implicit adaptation on motor variability",
       "Led multiple discussions on motor planning and control; also mentored and trained undergraduate research assistants",
     ),
   )
@@ -151,7 +159,7 @@
       "Critiqued, implemented, and tested auto-navigation algorithms from literature for deployment on inventory scanning robots",
       "Redesigned path planner to improve aisle scan coverage and efficiency by robustly handling obstructions and curved aisles",
       "Developed tools for rapidly prototyping planners and controllers and benchmarking their performance; written in Julia",
-      "Reviewed and fixed real-life behavior and performance bugs; identified, proposed, and applied planner improvements",
+      "Reviewed and fixed real-world behavior and performance bugs; identified, proposed, and applied planner improvements",
     ),
   )
   // #activity(
