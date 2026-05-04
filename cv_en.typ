@@ -39,7 +39,7 @@
   align(right)[
     #link("https://github.com/pranshumalik14")[#fa-github() pranshumalik14]
     #link("https://www.linkedin.com/in/pranshu-malik/")[#fa-linkedin() pranshu-malik] \
-    #text(font: "IBM Plex Mono", size: 9.25pt)[#link("mailto:pranshu.malik@oist.jp")]
+    #text(font: "IBM Plex Mono", size: 9.25pt)[#link("mailto:pranshu.malik@malikpra.in")]
   ],
 )
 
@@ -93,10 +93,11 @@
     "Okinawa Institute of Science and Technology",
     "Okinawa, Japan",
     "Ph.D. in Computational Neuroscience",
-    "Jan. '25 — Present",
+    "Jan. '25 — May '26",
     (
+      "Withdrew from the program in good standing to better pursue personal research interests and career goals",
       "Advisors: Greg Stephens, Amedeo Roberto Esposito",
-      "Selected coursework: Neural Representations and Dynamics in Motor Control, Brain Computation, Cognitive Neurorobotics"
+      "Selected coursework: Neuromotor Control, Nonlinear Dynamical Systems, Brain Computation, Cognitive Neurorobotics"
     ),
   )
   #activity(
@@ -134,7 +135,7 @@
     "Graduate Student, OIST Graduate University",
     "Okinawa, Japan",
     "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
-    "Jan. '25 — Present",
+    "Jan. '25 — May '26",
     (
       "Focusing on understanding closed-loop neural dynamics through behaviorally informative decomposition of control",
       "Completed several mini projects on topics like adaptive output chunking in recurrent neural networks, passive-active optimal control, dynamical systems reconstruction, speed-curvature power-law, and I/O stability of plastic spiking neural networks",
