@@ -3,7 +3,7 @@
 #let date = none // or string for preset date
 #set page(
   paper: "us-letter",
-  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  margin: (top: 1.25cm, bottom: 1cm, left: 1.5cm, right: 1.5cm),
   footer: context {
     let updatestr = none
     if counter(page).get().at(0) == counter(page).final().at(0) {
@@ -34,7 +34,7 @@
     #text(weight: "bold", size: 18pt)[
       #link("https://pranshumalik14.github.io/")[Pranshu Malik]
     ]\
-    _Naturalistic Control — in Humans, also for Robots_
+    _Reverse Engineering Motor Control in Humans, for Robots_
   ],
   align(right)[
     #link("https://github.com/pranshumalik14")[#fa-github() pranshumalik14]
@@ -48,16 +48,16 @@
     // section heading stays with the content
     #rect(width: 100%, fill: silver)[*#head*]
     #v(-1em)
-    #block(width: 100%, inset: (x: 0.75em, y: 0.5em))[
+    #block(width: 100%, inset: (x: 0.75em, y: 0.5em), breakable: true)[
       #body
     ]
     #v(-1em)
   ]
 }
 
-#section("Interests")[
+#section("Research Interests")[
   #par(justify: true)[
-    Sensorimotor Neuroscience $dot$ Robotics $dot$ Internal Models $dot$ Generalizable Control $dot$ Perception $dot$ Embodied Intelligence
+    Sensorimotor Neuroscience $dot$ Robotics $dot$ Systems Identification and Synthesis $dot$ Generalizable Control $dot$ Perception
   ]
 ]
 
@@ -88,6 +88,7 @@
     )
   )
 }
+
 #section("Education")[
   #activity(
     "Okinawa Institute of Science and Technology",
@@ -125,14 +126,14 @@
       "Engineering International Scholar: received a full tuition fee waiver for the entire duration of the program (C$229k)",
       "Recipient of the Adel S. Sedra Gold Medal for achieving the highest cumulative average in the graduating class",
       "Graduated with High Honors and Minor in Robotics and Mechatronics; Dean's Honor List in all semesters",
-      "Selected coursework (*graduate-level): Linear Control Systems, Signals and Systems, Fields and Waves, Digital Systems, Digital Signal Processing, Probability, *Random Processes, *Sensory Communication, System Mapping, Machine Learning, Real-time Control Systems, Robot Modeling and Control, Mechatronics, Philosophy of Religion",
+      "Selected coursework (*graduate-level): Linear Control Systems, *Random Processes, *Sensory Communication, Analog and Digital Electronics, System Mapping, Machine Learning, Real-time Control, Robot Modeling and Control, Mechatronics",
     ),
   )
 ]
 
-#section("Selected Research & Professional Experiences")[
+#section("Selected Experiences")[
   #activity(
-    "Graduate Student, OIST Graduate University",
+    "Doctoral Researcher, OIST Graduate University",
     "Okinawa, Japan",
     "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
     "Jan. '25 — May '26",
@@ -142,12 +143,12 @@
     ),
   )
   #activity(
-    "Graduate Student, Western Institute for Neuroscience",
+    "Graduate Researcher, Western Institute for Neuroscience",
     "London, Canada",
     "Sensorimotor Superlab",
     "Sept. '22 — Oct. '24",
     (
-      "Investigated the coupling between feedback and voluntary motor control by carefully estimating the update times of both modalities; also tried investigating the reliance of implicit adaptation on motor variability",
+      "Investigated goal-dependent coupling between reflexive and voluntary motor control by estimating update times of both modalities independently during ongoing movement; also tried investigating role of motor variability in implicit adaptation",
       "Led multiple discussions on motor planning and control; also mentored and trained undergraduate research assistants",
     ),
   )
@@ -173,37 +174,36 @@
   //     "Graded weekly assignments and midterm exams; involved in invigilation duties for quizzes, midterm, and final exams",
   //   ),
   // )
-  // #activity(
-  //   "Software Engineering Intern, Rocscience Inc.",
-  //   "Toronto, Canada",
-  //   "Geotechnical Software Tools Design",
-  //   "May '19 — Aug. '19",
-  //   (
-  //     "Developed an interactive geometry import tool for file formats external to, and also within, the software suite",
-  //     "Designed diagnostic tools to perform mesh queries and inspections to identify book-keeping and numerical errors",
-  //   ),
-  // )
+  #activity(
+    "Software Engineering Intern, Rocscience Inc.",
+    "Toronto, Canada",
+    "Geotechnical Software Tools Design",
+    "May '19 — Aug. '19",
+    (
+      "Developed interactive geometry import and diagnostic tools for file formats external to, and also within, the software suite",
+    ),
+  )
   #activity(
     "Undergraduate Research Assistant, Motion Adaptation Science Lab",
     "Toronto, Canada",
     "Toronto Rehabilitation Institute",
     "May '18 — Aug. '18",
     (
-      "Developed finite element models (FEMs) of the lower leg for the computational study of electrostimulation applications",
-      "Streamlined development workflow of bio-electric FEM studies from MRI data using Inventor, Comsol, and Matlab",
+      "Created finite element models of the lower leg from MRI data for optimizing functional electro-stimulation strategies",
     ),
   )
 ]
 
 #section("Talks & Posters")[
   #set enum(spacing: 1.15em, tight: true, reversed: true)
-  + Integration Timescales of Visuospatial Task Constraints and Composition Strategies in Sensory Feedback Responses. Poster, Champalimaud Research Symposium: _Neurocybernetics at Scale_, Champalimaud Centre for the Unknown, 2025. #text(
+  #set par(justify: true)
+  + Integration Timescales of Visuospatial Task Constraints and Composition Strategies in Reflex Responses. Poster, Champalimaud Research Symposium: _Neurocybernetics at Scale_, Portugal, 2025. #text(
           size: 6.5pt,
           baseline: -0.75pt,
         )[#link("https://drive.google.com/file/d/1WWBgnf7vEsh5YPw07KKoWVKA_ftK2FY7/view?usp=sharing")[#fa-external-link() \[pdf\]]]
-    Awarded a travel grant (€1500) by the Champalimaud Foundation and Protocol Labs.
-  + Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, 2024.
-  + Computing Error-bounded Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
+    Awarded a travel grant (€1500) by Champalimaud Foundation and Protocol Labs.
+  + Stretch Reflexes Quickly Integrate Spatial Task Constraints During Reaching. Invited talk, Department of Cognitive and Brain Sciences, IIT Gandhinagar, and Institute of Neuroscience, UC Louvain, 2024.
+  + Computing Error-bound Inverse Kinematics Solutions in Fixed-time using Low-Power Analog Circuits. Podium presentation, Undergraduate Engineering Research Day, University of Toronto, 2021. #text(
           size: 6.5pt,
           baseline: -0.75pt,
         )[#link("https://docs.google.com/presentation/d/1JCgzjaANxZCT1YolAK2pu6-y0TTslsGPYoZYA25BrpY/edit?usp=sharing")[#fa-external-link() \[slides\]]]
@@ -222,19 +222,18 @@
 
 #section("Technical Skills")[
   #align(center)[
-    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ Git $dot$ Typst $dot$ LaTeX $dot$ Graphics Design $dot$ 3D Design $dot$ Mechatronics $dot$ Machining
+    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ ROS $dot$ PyTorch $dot$ OpenCV $dot$ Typst $dot$ Graphics Design $dot$ Mechatronics $dot$ Machining
   ]
 ]
 
 #section("Selected Projects")[
-//   #project_descr("Project Name: Long-form description.")
-  #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project with the goal of developing a reach control method by combining algorithmic models of human motor-learning processes, such as proximodistal exploration and motor babbling. Designed and evaluated an interpolation-based method that covered the entire reachable space, contrary to tuning for specific reach targets.")
-  #project_descr("Analog IK Solver: Presents a generic computation method for inverse kinematics of serial robots using a modular and digitally reconfigurable analog circuit. Error-bounded approximate solutions are found in fixed time by continuously evaluating forward kinematics using periodic, phase-locked, and frequency-scaled waveforms as successive joint configurations.")
+  #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project with the aim to develop a reach control method by combining algorithmic models of human motor-learning processes, such as proximodistal exploration and motor babbling. Designed and evaluated an interpolation-based method that covered the entire reachable space, contrary to tuning for specific reach targets.")
+  #project_descr("Analog IK Solver: Presents a generic computation method for inverse kinematics of serial robots using a modular and digitally reconfigurable analog circuit. Error-bound approximate solutions are found in fixed time by continuously evaluating forward kinematics using periodic, phase-locked, and frequency-scaled waveforms as successive joint configurations.")
   #project_descr("CollabBots: A robotic platform, built from scratch, with two opposing robotic arms and orthogonal cameras to implement and test visual servoing and collaborative scheduling for picking and placing toy blocks in pre-specified goal patterns.")
 ]
 
 #section("Miscellaneous")[
-  #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities include identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
+  #project_descr("Academic Officer: Elected to represent the student assembly at OIST and liaise with the graduate school. Responsibilities included identifying inefficiencies and suggesting improvements in the academic program and advocating for student concerns and interests.")
   #project_descr("Big Ideas Committee: Led a club that is a part of the Society for Neuroscience Graduate Students (SONGS) at Western University. We hosted didactic discussions as well as regular share-what-you-read sessions on topics like creativity, philosophy of science, and consciousness. We also organized a student-led panel discussion on the scientific and philosophical study of consciousness, which was attended by 40+ graduate students and postdocs.")
   #project_descr("Hobbies and Side Interests: Photography and painting; citizen science; education systems; cognitive architectures; philosophy of mind, memory, and action; Indian philosophy; Sanskrit language; yoga and meditation.")
   #project_descr("Sports and Outdoor Activities: Love playing cricket and badminton, and have also played in local cricket leagues. I also enjoy running, hiking, camping, and long walks in nature.")

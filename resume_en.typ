@@ -82,6 +82,7 @@
     )
   )
 }
+
 #section("Education")[
   #activity(
     "Okinawa Institute of Science and Technology",
@@ -124,7 +125,7 @@
 
 #section("Work Experience")[
   #activity(
-    "Graduate Student, OIST Graduate University",
+    "Doctoral Researcher, OIST Graduate University",
     "Okinawa, Japan",
     "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
     "Jan. '25 — May '26",
@@ -134,12 +135,12 @@
     ),
   )
   #activity(
-    "Graduate Student, Western Institute for Neuroscience",
+    "Graduate Researcher, Western Institute for Neuroscience",
     "London, Canada",
     "Sensorimotor Superlab",
     "Sept. '22 — Oct. '24",
     (
-      "Investigated the coupling between feedback and voluntary motor control by carefully estimating the update times of both modalities; also tried investigating the reliance of implicit adaptation on motor variability",
+      "Investigated goal-dependent coupling between reflexive and voluntary motor control by estimating update times of both modalities independently during ongoing movement; also tried investigating role of motor variability in implicit adaptation",
       "Led multiple discussions on motor planning and control; also mentored and trained undergraduate research assistants",
     ),
   )
@@ -189,6 +190,6 @@
 
 #section("Professional Activities")[
   #par(justify: true)[
-    Conference Poster (CRSy, 2025) $dot$ Invited Talk (IIT Gandhinagar, 2024) $dot$ Student Leadership & Service (throughout)
+    Conference Poster (CRSy, 2025) $dot$ Invited Talk (IIT Gandhinagar, UC Louvain, 2024) $dot$ Student Leadership & Service
   ]
 ]
