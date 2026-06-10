@@ -1,9 +1,11 @@
 #import "@preview/fontawesome:0.5.0": *
 
 #let date = none // or string for preset date
+#let show_update = true
+#let show_pg_num = true
 #set page(
   paper: "us-letter",
-  margin: (top: 1.25cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+  margin: (top: 1.25cm, bottom: 1.25cm, left: 1.5cm, right: 1.5cm),
   footer: context {
     let updatestr = none
     if counter(page).get().at(0) == counter(page).final().at(0) {
@@ -11,7 +13,9 @@
       if datestr == none {
         datestr = datetime.today().display("[day] [month repr:long] [year]")
       }
-      updatestr = "Last updated: " + datestr
+      if show_update {
+        updatestr = "Last updated: " + datestr
+      }
     }
     set text(size: 9pt)
     grid(
@@ -21,7 +25,9 @@
         #updatestr
       ],
       grid.cell(align: right)[
-        #counter(page).display("1/1", both: true)
+        #if show_pg_num {
+           counter(page).display("1/1", both: true)
+        }
       ],
     )
   },
@@ -44,11 +50,11 @@
 )
 
 #let section(head, body) = {
-  block(breakable: false)[
+  block(breakable: true)[
     // section heading stays with the content
     #rect(width: 100%, fill: silver)[*#head*]
     #v(-1em)
-    #block(width: 100%, inset: (x: 0.75em, y: 0.5em))[
+    #block(width: 100%, inset: (x: 0.75em, y: 0.5em), breakable: true)[
       #body
     ]
     #v(-1em)
@@ -90,8 +96,8 @@
     "Ph.D. in Computational Neuroscience",
     "Jan. '25 — May '26",
     (
-      "Withdrew from the program in good standing to better pursue personal research interests and career goals",
-      "Selected coursework: Neuromotor Control, Nonlinear Dynamical Systems, Brain Computation, Cognitive Neurorobotics"
+      "Withdrew from the program in good standing to explore a better fit for personal research interests and career goals",
+      "Selected coursework: Sensorimotor Circuits, Nonlinear Dynamical Systems, Brain Computation, Cognitive Neurorobotics"
     ),
   )
   #activity(
@@ -112,25 +118,25 @@
   #activity(
     "University of Toronto",
     "Toronto, Canada",
-    "B.A.Sc. in Electrical Engineering; cGPA: 3.92/4.0",
+    "B.A.Sc. in Electrical Engineering; cGPA: 3.92/4.0, Major cGPA: 3.99/4.0",
     "Sept. '17 — Apr. '22",
     (
       "Engineering International Scholar: received a full tuition fee waiver for the entire duration of the program (C$229k)",
-      "Recipient of the Adel S. Sedra Gold Medal for achieving the highest cumulative average in the graduating class",
-      "Graduated with High Honors and Minor in Robotics and Mechatronics; Dean's Honor List in all semesters",
-      "Selected coursework (*graduate-level): Linear Control Systems, *Random Processes, *Sensory Communication, Analog and Digital Electronics, System Mapping, Machine Learning, Real-time Control, Robot Modeling and Control, Mechatronics",
+      "Recipient of the Adel S. Sedra Gold Medal for achieving the highest cumulative average marks in the graduating class",
+      "Graduated with High Honors and a Minor in Robotics and Mechatronics; Dean's Honor List in all semesters",
+      "Selected coursework (*graduate-level): Linear Control Systems, *Random Processes, *Sensory Communication, Analog and Digital Electronics, Signal Processing, Machine Learning, System Mapping, Real-time Control, Robot Modeling and Control",
     ),
   )
 ]
 
-#section("Work Experience")[
+#section("Work and Research Experience")[
   #activity(
     "Doctoral Researcher, OIST Graduate University",
     "Okinawa, Japan",
     "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
     "Jan. '25 — May '26",
     (
-      "Focusing on understanding closed-loop neural dynamics through behaviorally informative decomposition of control",
+      "Focused on understanding closed-loop neural dynamics through behaviorally informative decomposition of control",
       "Completed several mini projects on topics like adaptive output chunking in recurrent neural networks, passive-active optimal control, dynamical systems reconstruction, speed-curvature power-law, and I/O stability of plastic spiking neural networks",
     ),
   )
@@ -145,7 +151,7 @@
     ),
   )
   #activity(
-    "Navigation Engineering Intern, Zebra Technologies",
+    "Robotics Engineering Intern, Zebra Technologies",
     "Mississauga, Canada",
     "Path-Planning and Control Team",
     "May '20 — Aug. '21",
@@ -171,7 +177,8 @@
     "Toronto Rehabilitation Institute",
     "May '18 — Aug. '18",
     (
-      "Created finite element models of the lower leg from MRI data for optimizing functional electro-stimulation strategies",
+      "Created bioelectric models of lower-leg tissues from MRI data for optimizing functional electro-stimulation strategies",
+      // "Awarded a First-Year Engineering Summer Research Fellowship (C$7k); presented work at the IBME USRP poster day"
     ),
   )
 ]
@@ -184,12 +191,12 @@
 
 #section("Skills")[
   #par(justify: true)[
-    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ ROS $dot$ PyTorch $dot$ OpenCV $dot$ Typst $dot$ Graphics Design $dot$ Mechatronics $dot$ Machining
+    Python $dot$ Julia $dot$ Matlab $dot$ C/C++ $dot$ PyTorch $dot$ ROS $dot$ OpenCV $dot$ Typst $dot$ Graphics & 3D Design $dot$ Mechatronics $dot$ Machining
   ]
 ]
 
 #section("Professional Activities")[
   #par(justify: true)[
-    Conference Poster (CRSy, 2025) $dot$ Invited Talk (IIT Gandhinagar, UC Louvain, 2024) $dot$ Student Leadership & Service
+    Conference Poster (CRSy, 2025) $dot$ Invited Talks (IIT Gandhinagar, UC Louvain, 2024) $dot$ Student Leadership & Service
   ]
 ]
