@@ -70,7 +70,7 @@
 #section("Research Overview")[
   #set par(leading: 0.4em, justify: true)
   #set text(size: 9.5pt)
-  I seek principles for formulating flexible, general neural control, as in biology, to achieve intuitive dynamical control of robots. I also maintain an interest in complex, multidisciplinary problems involving distributed sensing and action, as in environmental technology.
+  I seek principles for formulating flexible, general neural control, as in biology, to achieve intuitive dynamical control of robots. I am also broadly interested in tackling complex, multidisciplinary, real-world problems through distributed sensing, inference, and action.
 ]
 
 #let activity(title, place, subtitle, duration, descr) = {
@@ -151,7 +151,7 @@
     "Jan. '25 — May '26",
     (
       "Focused on understanding closed-loop neural dynamics through behaviorally informative decomposition of control",
-      "Completed several mini projects on topics like adaptive output chunking in recurrent neural networks, passive-active optimal control, dynamical systems reconstruction, speed-curvature power-law, and I/O stability of plastic spiking neural networks",
+      "Completed several mini projects on topics like adaptive output chunking in recurrent neural networks, passive-active optimal control, dynamical systems reconstruction, movement power laws, and I/O stability of plastic spiking neural networks",
     ),
   )
   #activity(
@@ -257,7 +257,7 @@
 
 #section("Selected Projects")[
   #project_descr("Interpretability of Nonlinear Neural Control: Ongoing project on using local linear and bilinear model projections of RNN dynamics that stabilize a delayed cart-pole system, to characterize feedback and feedforward contributions and their interactions.")
-  #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project on developing a reach control method by combining algorithmic models of human motor-learning processes such as proximodistal exploration and motor babbling. Designed and evaluated an interpolation-based method covering the entire reachable space, contrary to tuning for specific reach targets.")
+  #project_descr("Intuitive Robot Arm Reach: Undergraduate final-year project on creating a reach control method by combining algorithmic models of human developmental learning, like proximodistal exploration and motor babbling, with joint acceleration based control. Designed and evaluated an interpolation-based approach spanning the full reachable workspace rather than specific targets.")
   #project_descr("Analog IK Solver: Generic computation method for inverse kinematics of serial robots using a modular and digitally reconfigurable analog circuit. Error-bound approximate solutions are found in fixed time by continuously evaluating forward kinematics using periodic, phase-locked, and frequency-scaled waveforms as successive joint configurations.")
   #project_descr("CollabBots: Robotic platform, built from scratch, with two opposing robotic arms and orthogonal cameras to implement and test visual servoing and collaborative scheduling for picking and placing toy blocks in pre-specified goal patterns.")
   #project_descr("Traffic and Emission Control System: City-scale IoT system integrating exhaust sensors, traffic light controllers, quota-based transportation incentives, and routing algorithms to monitor and manage congestion and enable further smart-city applications.")
