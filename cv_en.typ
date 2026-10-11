@@ -145,6 +145,16 @@
 
 #section("Work and Research Experience")[
   #activity(
+    "Research Engineer, Kosha Labs",
+    "Bengaluru, India",
+    "Egocentric Human Actions and Video for Robot Learning",
+    "Aug. '26 — Present",
+    (
+      "Developed an efficient, high-accuracy method for infilling gaps in hand-pose tracking, increasing usable data yield by ~16%",
+      "Debugged and improved various aspects of the processing pipeline, like stereo calibration, VIO, task segmentation, and egress",
+    ),
+  )
+  #activity(
     "Doctoral Researcher, OIST Graduate University",
     "Okinawa, Japan",
     "Biological Physics Theory Unit and Information Theory, Probability, and Statistics Unit",
